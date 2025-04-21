@@ -1,0 +1,10 @@
+from PIL import Image
+
+# Load the image
+image_path = "croissant.jnp"
+try:
+    img = Image.open(image_path)
+    img.show()
+except Exception as e:
+    print(f"Error loading image: {e}")
+    
